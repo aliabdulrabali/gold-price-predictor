@@ -1,6 +1,6 @@
 import time
 import logging
-from app.cron import daily_job
+from cron import daily_job
 
 logging.basicConfig(level=logging.INFO)
 
