@@ -1,0 +1,14 @@
+name: Daily Gold Fetch + Prediction
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs daily at 4:00 UTC
+  workflow_dispatch:     # Allows manual trigger
+
+jobs:
+  run-daily-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger /run-job on Render
+        run: |
+          curl -X GET https://gold-price-predictor-6ruq.onrender.com
