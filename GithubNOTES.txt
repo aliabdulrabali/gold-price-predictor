@@ -1,3 +1,5 @@
-git remote add origin https://github.com/aliabdulrabali/gold-price-predictor.git
-git branch -M main
-git push -u origin main
+cd C:\GoldPredictorApp
+
+git add .
+git commit -m "Configured .env with Render DB and GoldAPI key"
+git push origin main
