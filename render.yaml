@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gold-backend
+    env: docker
+    plan: free
+    region: oregon
+    repo: https://github.com/yourusername/gold-price-predictor
+    buildCommand: ""
+    startCommand: ""
+    rootDir: backend
