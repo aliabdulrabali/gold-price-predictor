@@ -9,3 +9,5 @@ prophet
 joblib
 pytest
 python-dotenv
+httpx<0.25
+

@@ -1,10 +1,13 @@
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+from typing import List
+
 from app.models import GoldPrice
 from app.database import SessionLocal
-from fastapi import Depends
-from sqlalchemy.orm import Session
-from app.schemas import GoldPriceOut
-from typing import List
+from app.schemas import GoldPriceOut, PredictionOut
 from app.predictor import generate_prediction
+
+router = APIRouter()
 
 
 
